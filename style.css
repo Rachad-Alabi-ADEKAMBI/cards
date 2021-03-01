@@ -1,0 +1,101 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: "roboto";
+}
+
+.container{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+width: 100%;
+margin: auto;
+}
+
+h1{
+    font-weight: bold;
+    font-size:3.5em;
+    border-bottom: 10px #00B490 solid;
+    margin: 30px auto;  
+    color: black;
+
+}
+.row{
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.card{
+    width: 320px;
+    height: 400px;
+    border-radius: 10px;
+    background: #DDDDDD;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px #DDDDDD;
+    transition: 500ms;
+    box-shadow: 1px 1px 1px 1px rgb(160, 154, 154) ;
+}
+
+.card:nth-child(2){
+    margin-top: 50px;
+}
+
+.card:hover{
+    background: #00B490;
+    margin-top: 0;
+}
+
+.card:hover .icon{
+     color:  #DDDDDD;
+}
+
+.card:hover .title,
+.card:hover .text{
+    color: white;
+}
+
+.icon{
+    color: #00B490;
+    margin: 30px 20px auto 30px;
+    height: 100px;
+    font-size: 3em;
+}
+
+.title{
+    font-size: 3em;
+    margin: 10px auto auto 30px;
+    width: 100%;
+    color: #303133;
+}
+
+.text{
+    margin: 20px auto auto 30px;
+    width: 80%;
+    color: grey;
+}
+
+button{
+    width: 150px;
+    height: 50px;
+    background: #00B490;
+    margin: auto;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+@media screen and (min-width: 350px) and (max-width: 767px){
+    h1{
+        font-size: 3em;
+    }
+
+    .card{
+        width: 310px;
+    }
+}
